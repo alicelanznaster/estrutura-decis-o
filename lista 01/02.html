@@ -6,25 +6,23 @@
 
     //ENTRADA
     const valorUm = Number(prompt(`Informe um número.`));
-    const valorDois = Number(prompt(`Informe outro número.`))
-    const valorTres = Number(prompt(`Informe outro número.`));
+    const valorDois = Number(prompt(`Informe outro número.`));
+    const valorTres = Number(prompt(`Informe mais um número.`));
     
     //PROCESSAMENTO
-    if ( valorUm >= valorDois && valorTres >= valorDois) {
-        alert(`Os números em ordem crescente ficam assim: ${valorUm}, ${valorDois} e ${valorTres}.`);
-    } else if (valorUm >= valorTres && valorDois >= valorTres ) {
-        alert(`Os números em ordem `)
+    if ( valorUm >= valorDois && valorDois >= valorTres) {
+        alert(`Os números em ordem decrescente ficam assim: ${valorUm}, ${valorDois} e ${valorTres}.`);
+    } else if ( valorUm >= valorTres && valorTres >= valorDois) {
+        alert(`Os números em ordem decrescente ficam assim: ${valorUm}, ${valorTres} e ${valorDois}`);
+    } else if ( valorDois >= valorUm && valorUm >= valorTres) {
+        alert(`Os números em ordem decrescente ficam assim: ${valorDois}, ${valorUm} e ${valorTres}.`);
+    } else if ( valorDois >= valorTres && valorTres >= valorDois) {
+        alert(`Os números em ordem decrescente ficam assim: ${valorDois}, ${valorTres} e ${valorUm}.`);
+    } else if ( valorTres >= valorUm && valorUm >= valorDois ) {
+        alert(`Os números em ordem decrescente ficam assim: ${valorTres}, ${valorUm} e ${valorDois}.`);
+    } else ( valorTres >= valorDois && valorDois >= valorUm) {
+        alert(`Os números em ordem decrescente ficam assim: ${valorTres}, ${valorDois} e ${valorUm}.`);
     }
-        
-    
-     //SAÍDA
-/* 
-1-2-3
-1-3-2
-2-1-3
-2-3-1
-3-1-2
-3-2-1 
-*/
+
     
 </script>
