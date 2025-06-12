@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
+    const antes = Number(prompt(`Informe a nota do little brother antes da ajuda.`));
+    const depois = Number(prompt(`Informe a nota do little brother depois da ajuda.`));
 
-    
     //PROCESSAMENTO
-    
-    
+    const subtracao = depois - antes 
+    const acrescimo = subtracao / 4;
+
     //SAÍDA
+    if ( depois > antes ) {
+        alert(`BB receberá ${acrescimo} pontos.`)
+    } else if ( depois < antes ) {
+        alert(`BB não receberá pontos.`)
+    }
 
 </script>
