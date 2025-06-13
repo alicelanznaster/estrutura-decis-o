@@ -1,0 +1,52 @@
+<script>
+    /*
+    PROBLEMA: DESCONTO COMBUSTÍVEL
+    Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+    Álcool:
+    - até 20 litros, desconto de 3% por litro
+    - acima de 20 litros, desconto de 5% por litro
+
+    Gasolina:
+    - até 20 litros, desconto de 4% por litro
+    - acima de 20 litros, desconto de 6% por litro
+    
+    Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 6,50 o preço do litro do álcool é R$ 6,10.
+    */
+
+    //ENTRADA
+    const litros = Number(prompt(`Quantos litros foram vendidos?`));
+    const combustivel = prompt(`Qual o tipo de combustível? Respoonda com A para álcool e G para gasolina.`);
+
+    //PROCESSAMENTO
+    if (combustivel == "A" ) {
+        if ( litros <= 20 ) {
+            const multiplicacaoAlc = 6.10 * litros;
+            const DescAlc1 = 3 / 100 * multiplicacaoAlc;
+            const totalAlc = ( multiplicacaoAlc - DescAlc1).toFixed(2);
+            alert(`Você pagará R$${totalAlc}.`)
+        } else {
+            const multiplicacaoAlc = 6.10 * litros;
+            const descAlc2 = 5 / 100 * multiplicacaoAlc;
+            const totalAlc2 = (multiplicacaoAlc - descAlc2).toFixed(2);
+            alert(`Você pagará R$${totalAlc2}.`)
+        }
+    } else if ( combustivel == "G") {
+        if (litros <= 20 ) {
+            const multiplicacaoG = 6.50 * litros;
+            const descG1 = 4 / 100 * multiplicacaoG;
+            const totalG1 = (multiplicacaoG - descG1).toFixed(2);
+            alert(`Você pagará R$${totalG1}.`);
+        } else {
+            const multiplicacaoG = 6.50 * litros;
+            const descG2 = 6 / 100 * multiplicacaoG;
+            const totalG2 = (multiplicacaoG - descG2).toFixed(2);
+            alert(`Você pagará R$${totalG2}.`);
+        }
+    } else {
+        alert(`Dados inválidos. Tente novamente.`)
+    }
+
+    
+    //SAÍDA
+
+</script>
