@@ -9,15 +9,23 @@
     const lado2 = Number(prompt(`Informe o valor do lado 2 do seu triângulo.`));
     const lado3 = Number(prompt(`Informe o valor do lado 3 do seu triângulo. `))
     
-    //PROCESSAMENTO
-    if ( lado1 == lado2 && lado2 == lado3) {
+    //PROCESSAMENTO E SAÍDA
+    if (lado1 + lado2 > lado3 &&
+        lado1 + lado3 > lado2 &&
+        lado2 + lado3 > lado1 ) {
+    if (lado1 == lado2 && lado2 == lado3 ) {
         alert(`Seu triângulo é equilátero!`);
-    } else if (lado1 == lado2 && lado1 != lado3) {
+    } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
         alert(`Seu triângulo é isóceles!`)
-    } else if (lado1 != lado2 && lado2 != lado3) {
+    } else if (lado1 != lado2 && lado2 != lado3 && lado3 != lado1) {
         alert(`Seu triângulo é escaleno!`);
-    } 
+    }
     
-    //SAÍDA
+    } else {
+        alert(`As medidas informadas não formam um triângulo`)
+    }
+     
+    
+    
 
 </script>

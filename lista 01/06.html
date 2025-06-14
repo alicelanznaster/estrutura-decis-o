@@ -13,7 +13,7 @@
     //ENTRADA
     const numero = Number(prompt(`Informe um número inteiro menor que 1000`));
 
-    //PROCESSAMENTO
+    //PROCESSAMENTO E SAÍDA
     if ( numero < 10) {
         alert(`${numero} = ${numero} unidade(s).`)
     } else if ( numero < 100 ) {
@@ -23,10 +23,10 @@
     } else if ( numero < 1000 ) {
         const centenas = Math.floor(numero / 100)
         const dezenas = Math.floor((numero % 100) / 10)
-        const unidadades = Math.floor(numero % 10)
-        alert(`${numero} = ${centenas} centena(s), ${dezenas} dezena(s) e ${unidadades} unidade(s)`);
+        const unidades = Math.floor(numero % 10)
+        alert(`${numero} = ${centenas} centena(s), ${dezenas} dezena(s) e ${unidades} unidade(s)`);
     }
     
-    //SAÍDA
+
 
 </script>

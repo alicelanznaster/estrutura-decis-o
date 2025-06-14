@@ -10,7 +10,7 @@
     //ENTRADA
     let quantia = Number(prompt(`Informe a quantia que deseja realizar saque: `));
     
-    //PROCESSAMENTO
+    //PROCESSAMENTO E SAÍDA
     if (quantia >= 10 && quantia <= 600) {
         let notasCem = Math.floor(quantia / 100);
         let notasCinquenta = Math.floor((quantia % 100) / 50)
@@ -82,6 +82,5 @@
         alert(`Quantia Inválida: Informe quantia entre R$ 10,00 e R$ 600,00`);
     }
     
-    //SAÍDA
 
 </script>

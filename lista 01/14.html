@@ -10,11 +10,21 @@
     */
 
     //ENTRADA
-
+    const altura = Number(prompt(`Qual a sua altura?`));
+    const peso = Number(prompt(`Quantos quilos você pesa?`));
     
     //PROCESSAMENTO
-
+    const imc = peso / (altura ** 2);
     
     //SAÍDA
+    if ( imc <= 18.5) {
+        alert(`Subpeso`);
+    } else if (imc <= 25.0 ) {
+        alert(`Normal`);
+    } else if (imc <= 30.0 ) {
+        alert(`Sobrepeso`);
+    } else {
+        alert(`Obeso`);
+    }
 
 </script>

@@ -6,11 +6,26 @@
     */
 
     //ENTRADA
-
+    const ano = Number(prompt(`Informe um ano.`))
     
-    //PROCESSAMENTO
-
+    //PROCESSAMENTO E SAÍDA
+    const ano4 = ano / 4;
+    const anoN4 = Number.isInteger(ano4);
     
-    //SAÍDA
+    const ano100 = ano / 100;
+    const anoN100 = Number.isInteger(ano100);
+
+    const ano400 = ano / 400;
+    const anoN400 = Number.isInteger(ano400);
+
+    if (anoN4 == true && anoN100 == false) {
+        alert(`${ano} é um ano bissexto`)
+    } else if (anoN400 == true) {
+        alert(`${ano} é um ano bissexto`);
+    } else {
+        alert(`${ano} não é um ano bissexto`);
+    }
+    
+
 
 </script>

@@ -9,12 +9,24 @@
     - acima de 1500: aumento de 5 %
     */
 
-    //ENTRADA
-
+    //ENTRADA E SAÍDA
+    const preco = Number(prompt(`Qual o preço do produto?`));
     
     //PROCESSAMENTO
-
+    if (preco <= 280) {
+        const aumento20 = preco + (preco * 0.2);
+        alert(`O preço com o aumento, fica R$${aumento20.toFixed(2)}.`);
+    } else if (preco <= 700) {
+        const aumento15 = preco + (preco * 0.15);
+        alert(`O preço com o aumento, fica R$${aumento15.toFixed(2)}.`);
+    } else if (preco <= 1500) {
+        const aumento10 = preco + (preco * 0.10);
+        alert(`O preço com o aumento, fica R$${aumento10.toFixed(2)}`)
+    } else {
+        const aumento5 = preco + (preco * 0.05);
+        alert(`O preço com o aumento, fica R$${aumento5.toFixed(2)}.`)
+    }
     
-    //SAÍDA
+
 
 </script>

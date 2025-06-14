@@ -6,11 +6,32 @@
     */
 
     //ENTRADA
+    const hemisferio = prompt(`Em qual hemisfério você está?`).toUpperCase()
+    const mes = prompt(`Qual o mês atual?`).toLowerCase()
+    //PROCESSAMENTO E SAÍDA
+    if (hemisferio == "SUL") {
+        if (mes == "janeiro" || mes == "fevereiro" || mes == "março") {
+            alert(`Você está no verão`);
+        } else if (mes == "abril" || mes == "maio" || mes == "junho"){
+            alert(`Você está no outono`);
+        } else if (mes == "julho" || mes == "agosto" || mes == "setembro") {
+            alert(`Voce está no inverno`)
+        } else if (mes== "outubro" || mes == "novembro" || mes == "dezembro") {
+            alert(`Você está no primavera`);
+        }
+      
+    } else if (hemisferio == "NORTE") {
+        if (mes == "janeiro" || mes == "fevereiro" || mes == "março") {
+            alert(`Você está no inverno`);
+        } else if (mes == "abril" || mes == "maio" || mes == "junho"){
+            alert(`Você está na primavera`);
+        } else if (mes == "julho" || mes == "agosto" || mes == "setembro") {
+            alert(`Voce está no verao`)
+        } else if (mes== "outubro" || mes == "novembro" || mes == "dezembro") {
+            alert(`Você está no outono`);
+        }
+    }
 
-
-    //PROCESSAMENTO
 
     
-    //SAÍDA
-
 </script>
